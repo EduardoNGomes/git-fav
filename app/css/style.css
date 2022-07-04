@@ -1,0 +1,207 @@
+:root {
+  font-size: 66, 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  font-size: 1rem;
+  color: white;
+}
+
+#app {
+  margin: 0 0.5rem;
+}
+
+header {
+  margin: 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header .logo {
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.search-box input {
+  padding: 10px;
+  background: #06181c;
+  border-radius: 5px;
+  border: 1px solid #06181c;
+
+  color: white;
+}
+
+.search-box button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 6px 10px;
+
+  border-radius: 5px;
+  border: 1px solid #065e7c;
+  background: #065e7c;
+
+  text-transform: uppercase;
+  color: white;
+
+  transition: 0.3s;
+}
+.search-box button:hover {
+  background: #021a22;
+  color: #065e7c;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* STYLE TABLE */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+table thead th {
+  padding: 0.3rem;
+  background: #043444;
+  text-align: left;
+}
+
+table thead th:nth-child(3) {
+  display: none;
+}
+
+table tbody tr {
+  text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #06161b;
+}
+
+table tbody tr:nth-child(even) td {
+  background: #08272e;
+}
+
+table tbody td:nth-child(3) {
+  display: none;
+}
+
+table tbody td {
+  padding: 0.3rem;
+}
+
+table tbody td a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table tbody td a:active {
+  color: white;
+}
+table tbody td img {
+  display: none;
+}
+table tbody td button {
+  margin: 0 0.3rem;
+  font-size: 0.8rem;
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+table tbody td button:hover {
+  color: rgba(255, 0, 0, 0.521);
+}
+
+/* BORDER*/
+
+table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    margin: 4rem auto;
+    justify-content: space-around;
+  }
+
+  table thead th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  table thead th:nth-child(3) {
+    display: table-cell;
+  }
+  table tbody td:nth-child(3) {
+    display: table-cell;
+  }
+  table thead th:first-child {
+    padding-left: 20px;
+  }
+  .user {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    align-items: center;
+  }
+  table tbody td img {
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    width: 1120px;
+
+    flex-direction: row;
+    margin: 4rem auto;
+    justify-content: space-between;
+  }
+
+  table {
+    width: 1120px;
+    margin: 0 auto;
+  }
+}

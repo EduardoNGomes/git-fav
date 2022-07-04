@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./app/css/style.css" />
+
+    <script src="./app/js/main.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <div class="logo"><img src="./assets/Gitfav.png" alt="" /></div>
+
+        <div class="search-box">
+          <label for="seach" class="sr-only"
+            >Digite o Github username que quer favoritar</label
+          >
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Digite o Github username "
+          />
+          <button><img src="./assets/star.png" alt="" /> Favoritar</button>
+        </div>
+      </header>
+
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositories</th>
+              <th>Fallowers</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="user">
+                <img src="" alt="" />
+                <div>
+                  <a href="">
+                    <p></p>
+                    <p></p
+                  ></a>
+
+                  <span></span>
+                </div>
+              </td>
+              <td class="repositories"></td>
+              <td class="followers"></td>
+              <td><button>Remover</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
